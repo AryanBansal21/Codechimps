@@ -1,0 +1,67 @@
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Submit your Blog</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead"> Share your programming concepts with the world.. </p> 
+    </div>
+</div>
+    <% if(infoSubmitObj!=''){ %>
+        <div class="row justify-content-center">
+        <div class="col-8 alert alert-success" role="alert">
+            <%=infoSubmitObj%>
+        </div>
+        </div>
+   <%}%>
+
+   <% if(infoErrorsObj!=''){ %>
+    <div class="row justify-content-center">
+    <div class="col-8 alert alert-danger" role="alert">
+        Blog <%=infoErrorsObj[0].message%>
+    </div>
+    </div>
+<%}%>
+
+
+
+<div class="row justify-content-center mb-5">
+    <div class="col-8">
+        <form action="/submit-blog" enctype="multipart/form-data" method="POST">
+            <div class="row g-3">
+            <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" required>
+            </div>
+            
+            <div class="col-12">
+                <label for="name" class="form-label">Blog Name</label>
+                <input type="text" name="name" id="name" class="form-control" required>
+            </div>
+
+            <div class="col-12">
+                <label for="description" class="form-label">Description</label>
+                <textarea type="text" class="form-control" name="description" cols="30" rows="4" id="description" required></textarea>
+            </div>
+
+            <div class="col-12">
+                <label for="category">Select Category</label>
+                <select name="category" class="form-control form-select" aria-label="Category">
+                <option selected>Select Category </option>
+                <option value="Arrays">Arrays </option>
+                <option value="Dynamic Programming">Dynamic Programming </option>
+                <option value="Stacks&Queues">Stacks&Queues </option>
+                <option value="Graphs">Graphs </option>
+                <option value="Miscellaneous">Miscellaneous</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <label for="image">Blog Image</label>
+                <input type="file" class="form-control" name="image" accept="image/*">
+            </div>
+        
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit Blog</button>
+            </div>
+            </div>
+        </form>
+    </div>
+</div> 
