@@ -1,5 +1,8 @@
 # Codechimps
-CodeChimps provides you free access to hundreds of articles and blogs posted by programmers around the world. Sign-Up and Log-in to create and publish your own blog!
+CodeChimps provides you free access to hundreds of articles and blogs posted by programmers around the world. Sign-Up and Log-in to create and publish your own blog to showcase your programming knowledge!
+
+## View Live App
+[On Heroku](https://obscure-plateau-62692.herokuapp.com/)
 
 ## Tech Stack:
   ### Back-end
@@ -9,8 +12,7 @@ CodeChimps provides you free access to hundreds of articles and blogs posted by 
    * Passport - For user authentication strategies
   
   ### Middle-Ware 
-   * mongoose
-   * ODM (Object Data Modelling) for MongoDB
+   * mongoose - ODM (Object Data Modelling) for MongoDB
   
   ### Front-end
    * EJS
