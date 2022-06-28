@@ -9,7 +9,7 @@ CodeChimps provides you free access to hundreds of articles and blogs posted by 
   ### Back-end
    * MongoDB - Document database for storing user data and blogs.
    * NodeJS - Runtime Environment for javascript
-   * expressJS - Back-end web application framework running on top of NodeJS
+   * ExpressJS - Back-end web application framework running on top of NodeJS
    * Passport - For user authentication strategies
   
   ### Middle-Ware 
